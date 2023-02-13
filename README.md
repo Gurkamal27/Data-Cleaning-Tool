@@ -47,6 +47,15 @@ There are several reasons why EWMA may be a better choice than other moving aver
 - Computational efficiency: Unlike other moving average methods, such as simple moving average (SMA) or weighted moving average (WMA), EWMA does not require the calculation of all previous data points to determine the current average. This makes it a more computationally efficient method for analyzing large data sets.
 
 In summary, EWMA is a flexible and effective method for analyzing time-series data, particularly when dealing with large data sets with a high frequency of data points. By giving more weight to recent data points and providing a more responsive representation of the trend, EWMA can help to identify important patterns and trends in the data that may be missed by other methods.
+
+## Output Comparison
+To assess the performance of both methods (Excel and Python), a test was conducted using a moving window of 70,000. This was designed to push the curve to its limits and make it easier to identify the difference in results. The results, as illustrated in the following figures, show that the Python implementation effectively captures the trend of the curve with a much greater accuracy than Excel. Additionally, Excel continues to calculate the average even when no values are available, which is not only useless but also inconsistent with proper data cleaning practices. 
+### Excel with a window size of 70,000
+<img src="Source/Excel 70,000 Window Size.PNG"  width="700" height="425">
+
+### Python with a window size of 70,000
+<img src="Source/Python 70,000 Window Size.png"  width="700" height="425">
+
 ## Conclution
 
 This data cleaning tool provides a convenient way to clean data sets and visualize the results. The tool can be modified and customized to fit different data cleaning requirements by changing the code as necessary.
