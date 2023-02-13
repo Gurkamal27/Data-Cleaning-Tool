@@ -17,6 +17,10 @@ The tool can be run by executing the file 'DataCleaningTool.py'. Upon execution,
 - Lower percentile: This is the lower bound percentile that will be used to remove outliers from the data set.
 
 Once the inputs have been specified, the user will be asked to select the .csv file containing the data set. The tool will then process the data and provide a graphical representation of the cleaned data.
+
+### Challenges/Shortcomings 
+
+The challenge in handling multiple datasets/circuit breakers, from a single input file is that the user-defined variables are applied to all datasets indiscriminately. This creates a problem as a set of parameters that works well for one dataset may not necessarily be suitable for others. To address this, two possible solutions are to either isolate each dataset independently or categorize them into groups based on their similar profiles.
 ## Installation
 
 Required Modules, most of which should already be installed in the standard installtion of python
