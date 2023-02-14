@@ -5,10 +5,10 @@
 
 This code provides a data cleaning tool for a given data set in a .csv file format. The tool can clean the data by calculating moving average and removing outliers based on specified lower and upper percentiles. The tool also provides a graphical representation of the cleaned data for visualization purposes.
 
-### Purpose
+## Purpose
 
 This code was created with the purpose of replacing a slower excel based method for processing data. The goal was to provide a faster and more efficient solution that can handle larger amounts of data in a timely manner.
-## Functionality 
+# Functionality 
 
 The tool can be run by executing the file 'DataCleaningTool.py'. Upon execution, the user will be prompted with a Tkinter GUI that asks for the following inputs:
 
@@ -18,10 +18,16 @@ The tool can be run by executing the file 'DataCleaningTool.py'. Upon execution,
 
 Once the inputs have been specified, the user will be asked to select the .csv file containing the data set. The tool will then process the data and provide a graphical representation of the cleaned data.
 
-### Challenges/Shortcomings 
+## Challenges/Shortcomings 
 
 The challenge in handling multiple datasets/circuit breakers, from a single input file is that the user-defined variables are applied to all datasets indiscriminately. This creates a problem as a set of parameters that works well for one dataset may not necessarily be suitable for others. To address this, two possible solutions are to either isolate each dataset independently or categorize them into groups based on their similar profiles.
-## Installation
+## Further Development 
+
+During the development of the primary code, a modular approach was taken to ensure ease of further development. For instance, the 'moving_average' function was designed to be easily interchangeable with an exponential moving average, showcasing the flexibility and modularity of the code. The modular design of the codebase allows for easy understanding, modification, and extension of the code, reducing code duplication and ensuring consistency. This saves time for future developers and allows them to focus on building new features and improving overall functionality
+
+The next feature to be developed is the ability for the user to specify the number of iterations the data cleaning function will perform. For example, if the user inputs '3', the function will clean the data three times, enhancing its cleaning ability.
+
+# Installation
 
 Required Modules, most of which should already be installed in the standard installtion of python
 -  [pandas](http://pandas.pydata.org/) (used for its dataframe object) 
@@ -30,7 +36,7 @@ Required Modules, most of which should already be installed in the standard inst
 -  [tkinter](https://docs.python.org/3/library/tkinter.html#module-tkinter) (used to create pop out windows for user inputs)
 -  [statistics](https://docs.python.org/3/library/statistics.html) (used for its normal distribution function)
 
-## Code Structure/Functions
+# Code Structure/Functions
 The code consists of the following functions:
 
 - get_variables: This function creates the Tkinter GUI for inputting the window size, upper percentile, and lower percentile.
