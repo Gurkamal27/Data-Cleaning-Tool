@@ -12,9 +12,9 @@ This code was created with the purpose of replacing a slower excel based method 
 
 The tool can be run by executing the file 'DataCleaningTool.py'. Upon execution, the user will be prompted with a Tkinter GUI that asks for the following inputs:
 
-- Window size: This is the number of data points to be used for calculating the moving average.
-- Upper percentile: This is the upper bound percentile that will be used to remove outliers from the data set.
-- Lower percentile: This is the lower bound percentile that will be used to remove outliers from the data set.
+- Window size: This is the number of data points to be used for calculating the moving average. This input should be a integer  between one and the maximum length of the dataset.
+- Upper percentile: This is the upper bound percentile that will be used to remove outliers from the data set. This value should be a float between zero and one hundred.
+- Lower percentile: This is the lower bound percentile that will be used to remove outliers from the data set. This value should be a float between zero and one hundred.
 
 Once the inputs have been specified, the user will be asked to select the .csv file containing the data set. The tool will then process the data and provide a graphical representation of the cleaned data.
 
