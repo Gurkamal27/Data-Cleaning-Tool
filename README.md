@@ -38,7 +38,7 @@ During the development of the primary code, a modular approach was taken to ensu
 
 # Installation
 
-Required Modules, most of which should already be installed in the standard installtion of python
+Required Modules, most of which should already be installed in the standard installation of python
 -  [pandas](http://pandas.pydata.org/) (used for its dataframe object) 
 -  [numpy](http://numpy.org) (general mathematical functions)
 -  [matpotlib](http://matplotlib.org/) (used to plot the end result) 
