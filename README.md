@@ -75,6 +75,6 @@ To assess the performance of both methods (Excel and Python), a test was conduct
 ### Python with a window size of 70,000
 <img src="Source/Python 70,000 Window Size.png"  width="500" height="300">
 
-## Conclution
+## Conclusion 
 
 This data cleaning tool provides a convenient way to clean data sets and visualize the results. The tool can be modified and customized to fit different data cleaning requirements by changing the code as necessary.
