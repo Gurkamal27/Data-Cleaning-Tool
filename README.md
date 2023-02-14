@@ -18,14 +18,23 @@ The tool can be run by executing the file 'DataCleaningTool.py'. Upon execution,
 
 Once the inputs have been specified, the user will be asked to select the .csv file containing the data set. The tool will then process the data and provide a graphical representation of the cleaned data.
 
+### User Interface
+<img src="Source/UI.PNG">
+
 ## Challenges/Shortcomings 
 
 The challenge in handling multiple datasets/circuit breakers, from a single input file is that the user-defined variables are applied to all datasets indiscriminately. This creates a problem as a set of parameters that works well for one dataset may not necessarily be suitable for others. To address this, two possible solutions are to either isolate each dataset independently or categorize them into groups based on their similar profiles.
 ## Further Development 
-
+### Modularity of code
 During the development of the primary code, a modular approach was taken to ensure ease of further development. For instance, the 'moving_average' function was designed to be easily interchangeable with an exponential moving average, showcasing the flexibility and modularity of the code. The modular design of the codebase allows for easy understanding, modification, and extension of the code, reducing code duplication and ensuring consistency. This saves time for future developers and allows them to focus on building new features and improving overall functionality
 
-The next feature to be developed is the ability for the user to specify the number of iterations the data cleaning function will perform. For example, if the user inputs '3', the function will clean the data three times, enhancing its cleaning ability.
+### Improvements
+- Multiple Iterations: The next feature to be developed is the ability for the user to specify the number of iterations the data cleaning function will perform. For example, if the user inputs '3', the function will clean the data three times, enhancing its cleaning ability. 
+- Saving files: To further improve the usability of the application, a new feature that can be implemented is the ability to save output plots directly to file.
+- Error detection and handling: A data cleaning program could include features that detect and handle errors in the data, such as missing values, inconsistent formatting, or incorrect data types. This could help ensure that the data is as accurate and complete as possible.
+- Integration with other tools and platforms: A data cleaning program could be designed to integrate with other tools and platforms, such as data visualization software or machine learning frameworks. This could help streamline the data cleaning process and enable users to more easily analyze and draw insights from the data.
+- Version control: A data cleaning program could include version control features, such as the ability to save and compare different versions of the data or track changes over time. This could help ensure that the data is as up-to-date and accurate as possible, and enable users to easily revert to previous versions if needed.
+- Automated testing: A data cleaning program could include automated testing features that verify the accuracy and completeness of the cleaned data, based on user-defined criteria or statistical analysis. This could help ensure that the data is as reliable as possible and reduce the risk of errors or discrepancies.
 
 # Installation
 
@@ -61,10 +70,10 @@ In summary, EWMA is a flexible and effective method for analyzing time-series da
 ## Output Comparison
 To assess the performance of both methods (Excel and Python), a test was conducted using a moving window of 70,000. This was designed to push the curve to its limits and make it easier to identify the difference in results. The results, as illustrated in the following figures, show that the Python implementation effectively captures the trend of the curve with a much greater accuracy than Excel. Additionally, Excel continues to calculate the average even when no values are available, which is not only useless but also inconsistent with proper data cleaning practices. 
 ### Excel with a window size of 70,000
-<img src="Source/Excel 70,000 Window Size.PNG"  width="700" height="425">
+<img src="Source/Excel 70,000 Window Size.PNG"  width="500" height="300">
 
 ### Python with a window size of 70,000
-<img src="Source/Python 70,000 Window Size.png"  width="700" height="425">
+<img src="Source/Python 70,000 Window Size.png"  width="500" height="300">
 
 ## Conclution
 
